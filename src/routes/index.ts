@@ -9,10 +9,6 @@ import { checkAuth } from '../middlewares';
 import sessionRouter from './session';
 
 const router = Router();
-router.get('/', (req: any, res: any) => {
-  console.log(req.token);
-//   res.send(req);
-});
 router.use('/appointments', appointmentsRouter);
 router.use('/therapists', therapistRouter);
 router.use('/admin', adminRouter);
